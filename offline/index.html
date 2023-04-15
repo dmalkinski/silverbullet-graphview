@@ -1,9 +1,9 @@
 <html>
 
 <head>
-    <script src="asset/d3.js"></script>
-    <script src="asset/d3-force.js"></script>
-    <script src="asset/force-graph.js"></script>
+    <script src="../asset/d3.js"></script>
+    <script src="../asset/d3-force.js"></script>
+    <script src="../asset/force-graph.js"></script>
 
 </head>
 
@@ -89,16 +89,19 @@
             ]
         };
         console.log(graph);
+        console.log(window.innerWidth)
+        console.log(window.innerHeight)
         const chart = ForceGraph(graph, {
             nodeId: d => d.id,
             nodeTitle: d => d.id,
             nodeStrokeOpacity: 0.75,
-            height: 600,
-            width: 700,
+            height: window.innerWidth,
+            width: window.innerHeight,
         });
         const graph_div = document.querySelector('#graph');
         graph_div.appendChild(chart);
     </script>
+
 </body>
 
 </html>
