@@ -38,7 +38,7 @@ async function script(graph: any) {
     "utf8",
   );
   // TODO: Get current height and width
-  
+
   return `
     ${d3js}
     ${d3forcejs}
@@ -50,8 +50,8 @@ async function script(graph: any) {
       nodeId: d => d.id,
       nodeTitle: d => d.id,
       nodeStrokeOpacity: 0.75,
-      height: 600,
-      width: 700,
+      height: window.availableHeight,
+      width: window.availableWidth,
     });
     const graph_div = document.querySelector('#graph');
     graph_div.appendChild(chart);
