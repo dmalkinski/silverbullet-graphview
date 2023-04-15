@@ -51,12 +51,12 @@ async function script(graph: any) {
       nodeId: d => d.id,
       nodeTitle: d => d.id,
       nodeStrokeOpacity: 0.75,
-      height: window.availableHeight,
-      width: window.availableWidth,
+      height: window.height,
+      width: window.width,
     });
     const graph_div = document.querySelector('#graph');
-    graph_div.style.height = window.availableHeight;
-    graph_div.style.width = window.availableWidth;
+    graph_div.style.height = window.height;
+    graph_div.style.width = window.width;
     graph_div.appendChild(chart);
   `;
 }
