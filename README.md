@@ -8,7 +8,7 @@ Silver Bullet.
 Open (`cmd+k`) your `PLUGS` note in SilverBullet and add this plug to the list:
 
 ```yaml
-- github:bbroeksema/silverbullet-graphview/graphview.plug.json
+- github:dmalkinski/silverbullet-graphview/graphview.plug.json
 ```
 
 Then run the `Plugs: Update` command and off you go!
