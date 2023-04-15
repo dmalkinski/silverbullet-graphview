@@ -3,7 +3,8 @@ import {
   editor,
   index,
   space,
-} from "$sb/silverbullet-syscall/mod.ts";
+}
+  from "$sb/silverbullet-syscall/mod.ts";
 import { asset } from "$sb/plugos-syscall/mod.ts";
 
 const GraphViewKey = "showGraphView";
@@ -54,6 +55,8 @@ async function script(graph: any) {
       width: window.availableWidth,
     });
     const graph_div = document.querySelector('#graph');
+    graph_div.style.height = window.availableHeight;
+    graph_div.style.width = window.availableWidth;
     graph_div.appendChild(chart);
   `;
 }
